@@ -7,3 +7,8 @@ Movers Logisstics  is committed to transforming mine management through data-dri
  -  Multi Shift AR
  -  Cycle review
  -  Operation delays haul
+
+ ### The Movers Logistcis Time Model
+ <img width="642" height="323" alt="image" src="https://github.com/user-attachments/assets/7e34a759-1191-43a2-ba34-414a3f368aa0" />
+
+ 
