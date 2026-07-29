@@ -31,29 +31,29 @@ IF OBJECT_ID ('bronze.cycle_review','U') IS NOT NULL
 	DROP TABLE bronze.cycle_review;
 
 ;
-CREATE TABLE  bronze.cycle_review (
-	start_timestamp DATETIME,
+ CREATE TABLE  bronze.cycle_review (
+	start_timestamp NVARCHAR (50),
 	truck NVARCHAR(50),
 	shovel NVARCHAR(50),
 	material NVARCHAR (50),
 	loading_area NVARCHAR (50),
 	dumping_area NVARCHAR (50),
-	tonnage INT,
-	fill_time INT,
-	queue_time INT,
-	cycle_time INT,
-	travel_distance_laden_metres INT,
+	tonnage NVARCHAR (50),
+	fill_time NVARCHAR (50),
+	queue_time NVARCHAR (50),
+	cycle_time NVARCHAR (50),
+	travel_distance_laden_metres NVARCHAR (50),
 	average_speed_laden_km_h FLOAT,
-	travel_seconds_laden INT,
-	travel_distance_unladen_metres INT,
+	travel_seconds_laden NVARCHAR (50),
+	travel_distance_unladen_metres NVARCHAR (50),
 	average_speed_unladen_km_h FLOAT,
-	travel_seconds_unladen INT,
-	dumping_time INT,
-	loading_time INT,
-	dumping_timestamp DATETIME,
-	loading_timestamp DATETIME,
-	cycle_time_seconds INT
-	)
+	travel_seconds_unladen NVARCHAR (50),
+	dumping_time NVARCHAR (50),
+	loading_time NVARCHAR (50),
+	dumping_timestamp NVARCHAR (50),
+	loading_timestamp NVARCHAR (50),
+	cycle_time_seconds NVARCHAR (50)
+	
 
 ;
 IF OBJECT_ID ('bronze.multi_shift','U') IS NOT NULL
