@@ -1,6 +1,6 @@
 
 DROP TABLE IF EXISTS bronze.operational_delays_haul;
-
+go
 CREATE TABLE bronze.operational_delays_haul (
 	AssetDescription NVARCHAR (50),
 	StartTimestamp NVARCHAR (50),
@@ -28,9 +28,11 @@ CREATE TABLE bronze.operational_delays_haul (
 	planned_maintenance NVARCHAR(10)
 	)
 ;
+go
 DROP TABLE IF EXISTS bronze.cycle_review;
 
 ;
+go
  CREATE TABLE  bronze.cycle_review (
 	start_timestamp NVARCHAR (50),
 	truck NVARCHAR(50),
@@ -52,12 +54,13 @@ DROP TABLE IF EXISTS bronze.cycle_review;
 	loading_time NVARCHAR (50),
 	dumping_timestamp NVARCHAR (50),
 	loading_timestamp NVARCHAR (50),
-	cycle_time_seconds NVARCHAR (50)
+	cycle_time_seconds NVARCHAR (50))
 	
-
 ;
+go 
 DROP TABLE IF EXISTS bronze.multi_shift
 ;
+go
 CREATE TABLE bronze.multi_shift (
 shift_caption NVARCHAR(50),
 shift_date NVARCHAR(50),
@@ -88,7 +91,9 @@ other_travel_seconds NVARCHAR(50),
 Unknown_operation_dealy_seconds NVARCHAR(50)
 )
 ;
-DROP TABLE IF EXISTS bronze.maintenance;
+go
+DROP TABLE IF EXISTS bronze.maintenance ; 
+go
 CREATE TABLE bronze.maintenance ( 
 	assetDescription NVARCHAR(50),
 	ActualEventStartTimestamp NVARCHAR(50),
@@ -116,4 +121,4 @@ CREATE TABLE bronze.maintenance (
 	Operator_KnownAs NVARCHAR(50),
 	Duration_in_hours NVARCHAR(50),
 	Production_day NVARCHAR(50)
-)
+) ; 
