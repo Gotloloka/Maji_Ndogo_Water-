@@ -90,9 +90,9 @@ Unknown_operation_dealy_seconds FLOAT
 )
 ;
 go
-DROP TABLE IF EXISTS bronze.maintenance ; 
+DROP TABLE IF EXISTS silver.maintenance ; 
 go
-CREATE TABLE bronze.maintenance ( 
+CREATE TABLE silver.maintenance ( 
 	assetDescription NVARCHAR(50),
 	ActualEventStartTimestamp DATETIME,
 	ActualEventEndTimestamp DATETIME,
