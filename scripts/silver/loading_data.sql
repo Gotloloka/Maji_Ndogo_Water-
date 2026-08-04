@@ -168,13 +168,13 @@ PRINT '>>Load Duration: '+ CAST(DATEDIFF(SECOND, @start_time,@end_time) as NVARC
 PRINT '------------------------------------------------------------------------------------';
 SET @batch_end_time = GETDATE();
 PRINT '===============================================================================';
-PRINT 'Loading Bronze Layer is Completed';
+PRINT 'Loading Silver Layer is Completed';
 PRINT '	- Total Load Duration: ' + CAST( DATEDIFF(SECOND,@batch_start_time,@batch_end_time) as NVARCHAR)+'seconds';
 PRINT '===============================================================================';
 END TRY
 	BEGIN CATCH
 			PRINT '==============================================================================='
-			PRINT 'ERROR OCCURED DURING LOADING BRONZE LAYER'
+			PRINT 'ERROR OCCURED DURING LOADING Silver LAYER'
 			PRINT 'ERROR MESSAGE' + ERROR_MESSAGE();
 			PRINT 'ERROR MESSAGE' + CAST(ERROR_NUMBER() AS NVARCHAR);
 			PRINT 'ERROR MESSAGE' + CAST(ERROR_STATE() AS NVARCHAR);
