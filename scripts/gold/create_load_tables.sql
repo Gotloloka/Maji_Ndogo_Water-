@@ -2,8 +2,10 @@
 	Gold Layer
 	- Create and Load tables
 	- Table are standardised by filter Null value and and repeated the data 
+	- run the query to create a Procedure 
+	-Exec to run full tables for this gold layer
 */
-CREATE PROCEDURE gold.load_gold AS
+CREATE OR ALTER PROCEDURE gold.load_gold AS
 BEGIN 
 DECLARE @start_time DATETIME, @end_Time DATETIME;
 DECLARE @batch_start_time DATETIME, @batch_end_time DATETIME;
@@ -168,3 +170,4 @@ BEGIN CATCH
 	PRINT '==============================================================================='
 END CATCH
 END ;
+
