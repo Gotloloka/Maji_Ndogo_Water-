@@ -81,7 +81,7 @@ BEGIN TRY
 	PRINT '------------------------------------------------------------------------------------';
 	SET @start_time = GETDATE();
 	PRINT'>> Drop Table: silver.maintenance';
-	DROP TABLE IF EXISTS silver.maintenanance ;
+	DROP TABLE IF EXISTS silver.maintenance ;
 	PRINT '>> Create and Inserting Data Into: silver.maintenance';
 	SELECT * INTO silver.maintenance FROM(
 	SELECT DISTINCT
